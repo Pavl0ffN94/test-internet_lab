@@ -13,6 +13,8 @@
 }
 
 
+
+
 .logo{
     position: relative;
     z-index: 1;
@@ -34,5 +36,12 @@
     cursor: pointer;
     @media (max-width: 768px ){
         display: none;
+    }
+}
+
+.burgerBtn{
+    display: none;
+    @media (max-width: 768px ){
+        display: block;
     }
 }

@@ -1,11 +1,13 @@
 import style from './style.module.css';
-import logo from '../../assets/logo.svg';
+
+import {BurgerMenu} from '../burgerMenu';
+import {LogoSvg} from '../../assets/Logo';
 
 export const Navigation = () => {
   return (
     <div className={style.navContainer}>
       <a className={style.logo} href='/'>
-        <img src={logo} />
+        <LogoSvg color={'#fff'} />
       </a>
 
       <nav>
@@ -23,6 +25,9 @@ export const Navigation = () => {
             <a>Форма</a>
           </li>
         </ul>
+        <div className={style.burgerBtn}>
+          <BurgerMenu />
+        </div>
       </nav>
     </div>
   );

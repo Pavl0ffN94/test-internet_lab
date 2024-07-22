@@ -6,6 +6,7 @@ export const Header = () => {
     <div className={style.backgound}>
       <div className={style.overlay}></div>
       <Navigation />
+
       <header className={style.header}>
         <TextHeader />
       </header>

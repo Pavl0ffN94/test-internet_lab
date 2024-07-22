@@ -1,0 +1,38 @@
+.navContainer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+    width: 100%;
+    padding: 28px 355px;
+
+    @media (max-width: 1200px ){
+        padding: 28px 16px;
+    }
+}
+
+
+.logo{
+    position: relative;
+    z-index: 1;
+}
+
+.navList{
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    gap: 24px;
+    z-index: 1;
+    width:100%;
+    white-space: nowrap;
+    list-style-type:  none;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    color: #fff;
+    cursor: pointer;
+    @media (max-width: 768px ){
+        display: none;
+    }
+}

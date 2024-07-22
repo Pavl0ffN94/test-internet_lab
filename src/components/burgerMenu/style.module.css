@@ -21,12 +21,15 @@
     transition: transform 0.3s ease, opacity 0.3s ease;
   }
   .burgerButton.open {
+    position: fixed;
+    right: 7%;
     span{
         background-color: #000;
     }
-  
   }
-  
+
+
+
   .burgerButton.open .top {
     transform: translateY(10px) rotate(45deg);
   }

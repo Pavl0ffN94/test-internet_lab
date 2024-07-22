@@ -1,9 +1,10 @@
-import {Header} from './container';
+import {Header, HowItWork} from './container';
 
 function App() {
   return (
     <>
       <Header />
+      <HowItWork />
     </>
   );
 }

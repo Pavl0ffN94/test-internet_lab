@@ -22,7 +22,7 @@
   }
   .burgerButton.open {
     position: fixed;
-    right: 7%;
+    right: 32px;
     span{
         background-color: #000;
     }
@@ -92,7 +92,7 @@
 
   .menuList li{
     border-bottom: 1px solid #ECEFF2;
-    height: 49px;
+    height: 64px;
     &::before {
         content: '>';
         position: absolute;

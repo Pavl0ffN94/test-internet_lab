@@ -1,0 +1,13 @@
+.section{
+    background-color: #F6F8FA;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+
+.title{
+    margin-top: 32px;
+    margin-bottom: 32px;
+    text-align: center;
+}

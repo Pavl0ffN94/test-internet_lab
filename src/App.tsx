@@ -1,4 +1,4 @@
-import {Header, HowItWork, ThirdSection} from './container';
+import {Feedback, Header, HowItWork, ThirdSection} from './container';
 
 function App() {
   return (
@@ -6,6 +6,7 @@ function App() {
       <Header />
       <HowItWork />
       <ThirdSection />
+      <Feedback />
     </>
   );
 }

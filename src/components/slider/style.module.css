@@ -1,0 +1,66 @@
+
+.carousel {
+  margin-bottom: 85px;
+  position: relative;
+  .react-multi-carousel-item {
+    display: flex;
+    justify-content: center;
+    padding: 50px 10px; 
+  }
+
+  .react-multi-carousel-track {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.carouselItem {
+  padding: 24px;
+}
+
+.imageWrapper {
+  user-select: none; 
+  -webkit-user-drag: none; 
+  pointer-events: none; 
+
+  border: 2px solid #ccc; 
+  border-radius: 10px; 
+  overflow: hidden; 
+  padding: 5px; 
+  background: white; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%; 
+  height: 542px; 
+
+  @media (max-width: 768px) {
+    height: 334px;
+  }
+
+  @media (max-width: 556px) {
+    height: 450px; 
+  }
+
+  img {
+    pointer-events: none; 
+    display: block;
+    max-width: auto;
+    max-height: 100%;
+    object-fit: cover;
+  }
+}
+.rightArrow{
+  position: absolute;
+  right: 7px;
+  top: 7%;
+  transform: translateY(-50%);
+  z-index: 10;
+}
+.leftArrow{
+  position: absolute;
+  right: 70px;
+  top: 7%;
+  transform: translateY(-50%);
+  z-index: 10;
+}

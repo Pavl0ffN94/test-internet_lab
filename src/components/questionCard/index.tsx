@@ -1,13 +1,9 @@
 import {useState} from 'react';
 import style from './style.module.css';
 import {IconToggle} from './IconToggle';
+import {IDefaultCardProps} from '../../types';
 
-interface IQuestionProp {
-  title: string;
-  text: string;
-}
-
-export const QuestionCard = ({title, text}: IQuestionProp) => {
+export const QuestionCard = ({title, text}: IDefaultCardProps) => {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleCard = () => {

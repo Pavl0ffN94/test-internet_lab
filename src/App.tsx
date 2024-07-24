@@ -1,4 +1,11 @@
-import {Feedback, Header, HowItWork, Questions, ThirdSection} from './container';
+import {
+  Articles,
+  Feedback,
+  Header,
+  HowItWork,
+  Questions,
+  ThirdSection,
+} from './container';
 
 function App() {
   return (
@@ -8,6 +15,7 @@ function App() {
       <ThirdSection />
       <Feedback />
       <Questions />
+      <Articles />
     </>
   );
 }

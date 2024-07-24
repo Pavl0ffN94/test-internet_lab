@@ -1,0 +1,23 @@
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
+    @media(max-with: 769px){
+        gap: 46px;
+    }
+    @media(max-with: 375px){
+        gap: 14px;
+    } 
+}
+
+.title{
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 32px;
+}
+
+.text{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+}

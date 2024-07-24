@@ -6,8 +6,8 @@ export const Questions = () => {
   return (
     <section className={style.section}>
       <h2 className={style.title}> Вопросы и ответы</h2>
-      {questionsData.map(quest => (
-        <div className={style.questList}>
+      {questionsData.map((quest, index) => (
+        <div className={style.questList} key={index}>
           <QuestionCard text={quest.text} title={quest.title} key={quest.title} />
         </div>
       ))}

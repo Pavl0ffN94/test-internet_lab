@@ -10,7 +10,10 @@
   
 .title{
   margin-top: 24px;
-  @media(max-width:769px){
+  &:hover{
+      color: #2A6CEA;
+    }
+      @media(max-width:769px){
     text-align: left;
   }
 }
@@ -25,9 +28,7 @@
     line-height: 32px;
     gap: 20px;
     color: #191C1F;
-    &:hover{
-      color: #2A6CEA;
-    }
+
   }
   
   .icon {

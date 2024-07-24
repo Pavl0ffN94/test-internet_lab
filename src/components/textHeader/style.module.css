@@ -63,4 +63,5 @@
     border-radius: 4px;
     white-space: nowrap;
     border: none;
+    cursor: pointer;
 }

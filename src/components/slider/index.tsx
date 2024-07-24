@@ -12,7 +12,7 @@ interface ArrowProps {
 
 const responsive = {
   desktop: {
-    breakpoint: {max: 3000, min: 1024},
+    breakpoint: {max: 3000, min: 1094},
     items: 3,
     partialVisibilityGutter: 40,
   },
@@ -22,7 +22,7 @@ const responsive = {
     partialVisibilityGutter: 30,
   },
   tablet: {
-    breakpoint: {max: 1024, min: 581},
+    breakpoint: {max: 1094, min: 581},
     items: 2,
     partialVisibilityGutter: 30,
   },

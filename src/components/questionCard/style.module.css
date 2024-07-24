@@ -1,37 +1,45 @@
 .wrapper {
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    padding: 16px;
-    margin: 16px;
+    padding: 0 24px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    display: block;
+    background-color: inherit;
+    width: 100%;
+    border: none;
+ 
   }
   
-  .wrapper:hover {
-    background-color: #f9f9f9;
-  }
+.title{
+  margin-top: 24px;
+}
   
   .header {
+    border-top: 1px solid #F6F8FA;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-weight: bold;
+    font-weight: 600;
     font-size: 18px;
+    line-height: 32px;
+    color: #191C1F;
+    &:hover{
+      color: #2A6CEA;
+    }
   }
   
   .icon {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 40px;
-    height: 40px;
-    border: 2px solid #ccc;
+    width: 24px;
+    height: 24px;
+    border: 2px solid #191C1F;
     border-radius: 50%;
     transition: transform 0.3s ease;
+    margin-top: 24px;
   }
   
   .icon.open {
-    transform: rotate(45deg);
+    transform: rotate(90deg);
   }
   
   .svgIcon {
@@ -43,8 +51,10 @@
   }
   
   .content {
-    margin-top: 16px;
-    font-size: 16px;
-    line-height: 1.5;
+    margin-top: 24px;
+    font-size: 18px;
+    line-height: 32px;
+    color: #5E646A;
+    text-align: left;
   }
   

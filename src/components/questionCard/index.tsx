@@ -2,7 +2,12 @@ import {useState} from 'react';
 import style from './style.module.css';
 import {IconToggle} from './IconToggle';
 
-export const QuestionCard = () => {
+interface IQuestionProp {
+  title: string;
+  text: string;
+}
+
+export const QuestionCard = ({title, text}: IQuestionProp) => {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleCard = () => {
@@ -10,19 +15,12 @@ export const QuestionCard = () => {
   };
 
   return (
-    <div className={style.wrapper} onClick={toggleCard}>
+    <button className={style.wrapper} onClick={toggleCard}>
       <div className={style.header}>
-        Частокол на границе продолжает удивлять?
+        <p className={style.title}>{title}</p>
         <IconToggle isOpen={isOpen} />
       </div>
-      {isOpen && (
-        <div className={style.content}>
-          В частности, дальнейшее развитие различных форм деятельности позволяет выполнить
-          важные задания по разработке дальнейших направлений развития. Предварительные
-          выводы неутешительны: экономическая повестка сегодняшнего дня говорит о
-          возможностях существующих финансовых и административных условий.
-        </div>
-      )}
-    </div>
+      {isOpen && <div className={style.content}>{text}</div>}
+    </button>
   );
 };

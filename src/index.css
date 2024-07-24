@@ -1,5 +1,5 @@
-@font-face { font-family: 'Graphik LCG'; src: url('/path/to/fonts/GraphikLCG-Regular.woff2') format('woff2'), url('/path/to/fonts/GraphikLCG-Regular.woff') format('woff'); font-weight: normal; font-style: normal; }
-@font-face { font-family: 'Graphik LCG'; src: url('/path/to/fonts/GraphikLCG-Bold.woff2') format('woff2'), url('/path/to/fonts/GraphikLCG-Bold.woff') format('woff'); font-weight: bold; font-style: normal; }
+
+@import './fonts.css';
 
 
 html, body, div, span, applet, object, iframe,

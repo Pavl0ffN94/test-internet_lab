@@ -1,8 +1,14 @@
 .section{
     max-width: 1100px;
     margin: 0 auto;
+    margin-bottom: 30vh;
 }
 
 .title{
     text-align: center;
+    margin-bottom: 41px;
+}
+
+.questList{
+    margin-bottom: 49px;
 }

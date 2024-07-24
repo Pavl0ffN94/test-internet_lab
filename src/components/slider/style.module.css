@@ -2,6 +2,18 @@
 .carousel {
   margin-bottom: 85px;
   position: relative;
+  cursor: pointer;
+  max-width: 80%;
+  margin: 0 auto;
+
+  @media (max-width: 1190px){
+    max-width: 90%;
+  }
+
+  @media (max-width: 769px){
+    max-width: 100%;
+  }
+
   .react-multi-carousel-item {
     display: flex;
     justify-content: center;
@@ -15,52 +27,30 @@
 }
 
 .carouselItem {
-  padding: 24px;
-}
-
-.imageWrapper {
-  user-select: none; 
-  -webkit-user-drag: none; 
-  pointer-events: none; 
-
-  border: 2px solid #ccc; 
-  border-radius: 10px; 
-  overflow: hidden; 
-  padding: 5px; 
-  background: white; 
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%; 
-  height: 542px; 
-
-  @media (max-width: 768px) {
-    height: 334px;
-  }
-
-  @media (max-width: 556px) {
-    height: 450px; 
-  }
-
-  img {
-    pointer-events: none; 
-    display: block;
-    max-width: auto;
-    max-height: 100%;
-    object-fit: cover;
+  padding: 0 24px 24px;
+  margin-bottom: 50px;
+  @media (max-width: 375px){
+  margin-bottom: 40px;
   }
 }
-.rightArrow{
+
+.carouselArrow {
   position: absolute;
-  right: 7px;
-  top: 7%;
+  top: 42%;
   transform: translateY(-50%);
   z-index: 10;
+  cursor: pointer;
+  @media (max-width: 769px){
+    display: none;
+  }
+
 }
-.leftArrow{
-  position: absolute;
-  right: 70px;
-  top: 7%;
-  transform: translateY(-50%);
-  z-index: 10;
+
+.carouselArrow.left {
+  left: -8px;
 }
+
+.carouselArrow.right {
+  right: -8px;
+}
+

@@ -1,0 +1,50 @@
+.wrapper {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 16px;
+    margin: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .wrapper:hover {
+    background-color: #f9f9f9;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+    font-size: 18px;
+  }
+  
+  .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border: 2px solid #ccc;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+  }
+  
+  .icon.open {
+    transform: rotate(45deg);
+  }
+  
+  .svgIcon {
+    transition: transform 0.3s ease, opacity 0.3s ease;
+  }
+  
+  .svgIcon line {
+    transition: transform 0.3s ease, opacity 0.3s ease;
+  }
+  
+  .content {
+    margin-top: 16px;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  

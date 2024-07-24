@@ -1,15 +1,14 @@
-import React, {useState} from 'react';
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import style from './style.module.css';
 import {feedbackData} from '../../mock';
 import {SliderCard} from '../sliderCard';
-import {ArrowLeft} from '../../assets/ArrowLeft';
-import {ArrowRight} from '../../assets/ArrowRight';
+import LeftArrowIcon from '../../assets/leftArrow.svg?react';
+import RightArrowIcon from '../../assets/rightArrow.svg?react';
 
 const responsive = {
   desktop: {
-    breakpoint: {max: 3000, min: 1070},
+    breakpoint: {max: 3000, min: 1024},
     items: 3,
     partialVisibilityGutter: 40,
   },
@@ -19,52 +18,37 @@ const responsive = {
     partialVisibilityGutter: 30,
   },
   tablet: {
-    breakpoint: {max: 1070, min: 581},
+    breakpoint: {max: 1024, min: 581},
     items: 2,
     partialVisibilityGutter: 30,
   },
 };
 
 export const CustomSlider = () => {
-  const [activeArrow, setActiveArrow] = useState<null | 'left' | 'right'>(null);
-
-  const handleLeftClick = () => {
-    setActiveArrow('left');
+  const CustomLeftArrow = ({onClick}: ArrowProps) => {
+    return (
+      <button className={`${style.arrowButton} ${style.arrowLeft}`} onClick={onClick}>
+        <LeftArrowIcon />
+      </button>
+    );
   };
 
-  const handleRightClick = () => {
-    setActiveArrow('right');
-  };
-
-  const handleClickOutside = (event: React.MouseEvent<HTMLDivElement, MouseEvent>) => {
-    if ((event.target as Element).closest('.carouselArrow')) {
-      return;
-    }
-    setActiveArrow(null);
+  const CustomRightArrow = ({onClick}: ArrowProps) => {
+    return (
+      <button className={`${style.arrowButton} ${style.arrowRight}`} onClick={onClick}>
+        <RightArrowIcon />
+      </button>
+    );
   };
 
   return (
-    <div className={style.container} onClick={handleClickOutside}>
+    <div className={style.wrapper}>
       <Carousel
         additionalTransfrom={0}
         autoPlaySpeed={3000}
-        customLeftArrow={
-          <div className={`${style.carouselArrow} ${style.left}`}>
-            <ArrowLeft
-              color={activeArrow === 'left' ? '#2A6CEA' : '#C2C8CD'}
-              onClick={handleLeftClick}
-            />
-          </div>
-        }
-        customRightArrow={
-          <div className={`${style.carouselArrow} ${style.right}`}>
-            <ArrowRight
-              color={activeArrow === 'right' ? '#2A6CEA' : '#C2C8CD'}
-              onClick={handleRightClick}
-            />
-          </div>
-        }
         centerMode={false}
+        customLeftArrow={<CustomLeftArrow />}
+        customRightArrow={<CustomRightArrow />}
         className={style.carousel}
         draggable
         focusOnSelect={false}
@@ -75,11 +59,10 @@ export const CustomSlider = () => {
         pauseOnHover
         renderArrowsWhenDisabled={false}
         renderButtonGroupOutside={false}
-        renderDotsOutside={false}
+        renderDotsOutside={true}
         responsive={responsive}
         rewind={false}
         rewindWithAnimation={false}
-        rtl={false}
         shouldResetAutoplay
         slidesToSlide={1}
         swipeable

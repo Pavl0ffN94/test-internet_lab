@@ -6,6 +6,10 @@ import {SliderCard} from '../sliderCard';
 import LeftArrowIcon from '../../assets/leftArrow.svg?react';
 import RightArrowIcon from '../../assets/rightArrow.svg?react';
 
+interface ArrowProps {
+  onClick: () => void;
+}
+
 const responsive = {
   desktop: {
     breakpoint: {max: 3000, min: 1024},
@@ -47,8 +51,8 @@ export const CustomSlider = () => {
         additionalTransfrom={0}
         autoPlaySpeed={3000}
         centerMode={false}
-        customLeftArrow={<CustomLeftArrow />}
-        customRightArrow={<CustomRightArrow />}
+        customLeftArrow={<CustomLeftArrow onClick={() => {}} />}
+        customRightArrow={<CustomRightArrow onClick={() => {}} />}
         className={style.carousel}
         draggable
         focusOnSelect={false}

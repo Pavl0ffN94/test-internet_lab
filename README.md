@@ -1,30 +1,37 @@
-# React + TypeScript + Vite
+# Задания
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Задание 1
 
-Currently, two official plugins are available:
+Сверстать страницу из Figma (макет сложный):  
+[Макет в Figma](https://www.figma.com/file/dFftQlRVKZWjYGfX6yWOGW/%D0%A2%D0%B5%D1%81%D1%82%D0%BE%D0%B2%D0%BE%D0%B5-%D0%B7%D0%B0%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5?type=design&mode=design)  
+По возможности разместить готовый результат в общедоступный GIT-репозиторий.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Если какие-то блоки покажутся сложными, можно их не делать. Цель задания — показать свои знания и навыки, а не выполнить задание пиксель-перфект.
 
-## Expanding the ESLint configuration
+Для вашего удобства составлен список компетенций:  
+[Список компетенций](https://docs.google.com/document/d/1QaE20p_XOGMk7LS0JaaJF9gw9m9-XQNE8Fb59exWvt8/edit?usp=sharing)
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Задание 2
 
-- Configure the top-level `parserOptions` property like this:
+Сверстать страницу из Figma (макет сложный):  
+[Макет в Figma](https://www.figma.com/file/dFftQlRVKZWjYGfX6yWOGW/%D0%A2%D0%B5%D1%81%D1%82%D0%BE%D0%B2%D0%BE%D0%B5-%D0%B7%D0%B0%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5?type=design&node-id=0-1&mode=design)
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json', './tsconfig.app.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+Что важно:
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+1. Вёрстка должна быть адаптивной на всех разрешениях (вплоть до 320px).
+2. Перенести всю типографику и показать все состояния интерактивных элементов (всё, что есть в типографике).
+3. Слайдер должен быть полностью рабочим и не ломаться при уменьшении экрана. Пагинация тоже должна работать.
+4. При работе с формой реализовать валидацию полей (стиль 1 в 1 как на макете). После нажатия на кнопку "Отправить" должна происходить отправка формы на сервер (написать `fetch` или `ajax`).
+5. Хорошая семантика кода и вёрстки. Осознанные названия переменных и классов (можно БЭМ, можно без него).
+6. В проекте обязательно должен быть использован один из сборщиков (Webpack, Gulp).
+
+## Задание 3
+
+В качестве базового задания нужно сверстать страницу согласно макету:  
+[Макет в Figma](https://www.figma.com/file/dFftQlRVKZWjYGfX6yWOGW/%D0%A2%D0%B5%D1%81%D1%82%D0%BE%D0%B2%D0%BE%D0%B5-%D0%B7%D0%B0%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5?type=design&mode=design)
+
+Реализовать данную страницу на React + Typescript + Redux Toolkit.
+
+## P.S
+
+понял какой функианал мне нужно было реализовать на Redux Toolkit. отправку запроса я имитировал промисом с использование setTimeout но вообще я умею работать с формами :)

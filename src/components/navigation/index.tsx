@@ -13,16 +13,16 @@ export const Navigation = () => {
       <nav>
         <ul className={style.navList}>
           <li>
-            <a>Как это работает</a>
+            <a href='#howItWork'>Как это работает</a>
           </li>
           <li>
-            <a>3-й блок</a>
+            <a href='#thirdSection'>3-й блок</a>
           </li>
           <li>
-            <a>Вопросы и ответы</a>
+            <a href='#question'>Вопросы и ответы</a>
           </li>
           <li>
-            <a>Форма</a>
+            <a href='#form'>Форма</a>
           </li>
         </ul>
         <div className={style.burgerBtn}>

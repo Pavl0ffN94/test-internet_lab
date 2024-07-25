@@ -1,9 +1,10 @@
 import {sectionThirdImg} from '../../assets';
+import {ISectionProps} from '../../types';
 import style from './style.module.css';
 
-export const ThirdSection = () => {
+export const ThirdSection = ({id}: ISectionProps) => {
   return (
-    <section className={style.section}>
+    <section id={id} className={style.section}>
       <div className={style.textWrapper}>
         <h5 className={style.title}>Круто, ты дошел до третьего блока</h5>
         <p className={style.paragraphOne}>

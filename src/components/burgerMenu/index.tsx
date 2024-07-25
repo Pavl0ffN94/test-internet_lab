@@ -30,17 +30,17 @@ export const BurgerMenu = () => {
           </a>
         </div>
         <ul className={style.menuList}>
-          <li>
-            <a href='#'>Как это работает</a>
+          <li onClick={toggleModal}>
+            <a href='#howItWork'>Как это работает</a>
           </li>
-          <li>
-            <a href='#'>3-й блок</a>
+          <li onClick={toggleModal}>
+            <a href='#thirdSection'>3-й блок</a>
           </li>
-          <li>
-            <a href='#'>Вопросы и ответы</a>
+          <li onClick={toggleModal}>
+            <a href='#question'>Вопросы и ответы</a>
           </li>
-          <li>
-            <a href='#'>Форма</a>
+          <li onClick={toggleModal}>
+            <a href='#form'>Форма</a>
           </li>
         </ul>
       </Modal>

@@ -6,9 +6,9 @@
     z-index: 1;
     margin-top: 233px;
 
-    @media (max-width: 768px ){
-        margin-left: 136px;
-        margin-right: 136px;
+    @media (max-width: 770px ){
+        margin-top: 10%;
+
     }
     @media (max-width: 556px ){
         margin-left: 44px;

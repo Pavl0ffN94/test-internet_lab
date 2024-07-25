@@ -1,6 +1,10 @@
+import {ToastContainer} from 'react-toastify';
+
 import {
   Articles,
   Feedback,
+  Footer,
+  Form,
   Header,
   HowItWork,
   Questions,
@@ -10,12 +14,15 @@ import {
 function App() {
   return (
     <>
+      <ToastContainer />
       <Header />
-      <HowItWork />
-      <ThirdSection />
+      <HowItWork id={'howItWork'} />
+      <ThirdSection id={'thirdSection'} />
       <Feedback />
-      <Questions />
+      <Questions id={'question'} />
       <Articles />
+      <Form id={'form'} />
+      <Footer />
     </>
   );
 }

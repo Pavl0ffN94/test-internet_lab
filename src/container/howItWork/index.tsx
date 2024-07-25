@@ -1,10 +1,11 @@
 import {CardHowItWork} from '../../components/cardHowItWork';
 import {howItWorkData} from '../../mock';
+import {ISectionProps} from '../../types';
 import style from './style.module.css';
 
-export const HowItWork = () => {
+export const HowItWork = ({id}: ISectionProps) => {
   return (
-    <section className={style.section}>
+    <section id={id} className={style.section}>
       <h2 className={style.title}> Как это работает</h2>
       <div className={style.cardList}>
         {howItWorkData.map(stage => (

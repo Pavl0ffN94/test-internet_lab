@@ -31,7 +31,7 @@
         grid-template-columns: repeat(2, 1fr);
     }
 
-    @media (max-width: 375px){
+    @media (max-width: 380px){
         display: flex;
         flex-direction: column;
     }
